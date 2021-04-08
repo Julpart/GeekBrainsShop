@@ -1,0 +1,27 @@
+.social-network {
+    background: #222224;
+
+
+
+
+&-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    min-height: 79px;
+
+}
+
+&__list {
+    display: flex;
+}
+
+&__item {
+    margin-left: 7px;
+}
+
+}
+.copyright {
+    @include font (16px,19px,400);
+    color: #FBFBFB;
+}
