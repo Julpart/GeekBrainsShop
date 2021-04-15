@@ -7,7 +7,7 @@ body {
     }
     
     .container {
-        width: 1148px;
+        width: 72%;
         margin: 0 auto;
     
     }
@@ -21,5 +21,11 @@ body {
         overflow: hidden;
         border: 0;
         clip: rect(0 0 0 0)
+      }
+
+      @media(max-width: $desktop-w){
+          .container{
+            width: 96%;
+          }
       }
       

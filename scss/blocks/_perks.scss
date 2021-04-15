@@ -1,5 +1,10 @@
 .registration-perks {
     margin-left: 128px;
+
+    @include mobile{
+        margin: 40px 0; 
+    }
+
 }
 .perks{
 &__title {
