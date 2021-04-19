@@ -29,10 +29,12 @@
 
 &__item {
     width: 360px; 
-    
+    position: relative;
+
     @include min-mobile{
         width: 100%;
     }
+
 }
 
 &__button {
@@ -57,37 +59,78 @@
 
 .product{
 
- &__img {
-    display: block;
+    &__img {
+        display: block;
      
-    @include min-mobile{
+        @include min-mobile{
         width: 100%;
+        }
     }
-}
 
-&__description {
-    background: var(--gray-color);
-    padding: 25px 29px 20px 17px;
-}
+    &__hover{
+        transform: translate(-50%, -50%);
+        background: rgb(58, 56, 56);
+        width: 360px;
+        height: 73%;
+        position: absolute;
+        top: 36%;  
+        left: 50%;
+        opacity: 0;
+        cursor: pointer;
+        
+
+        &:hover,
+        &:focus {
+            opacity: 0.87;
+
+        }
+
+    }
+
+    &__description {
+        background: var(--gray-color);
+        padding: 25px 29px 20px 17px;
+    }
 
 
 
-&__title {
-    text-transform: uppercase;
-    @include font(13px,16px,400);
-    margin-bottom: 12px;
-    color: black;
-}
+    &__title {
+        text-transform: uppercase;
+        @include font(13px,16px,400);
+         margin-bottom: 12px;
+        color: black;
+    }
 
-&__text {
-    @include font(14px,17px,300);
-    margin-bottom: 18px;
-    color:  #5D5D5D;
-}
+    &__text {
+        @include font(14px,17px,300);
+        margin-bottom: 18px;
+        color:  #5D5D5D;
+    }
 
-&__price {
-    @include font(16px,19px,400);
-    color: #F16D7F;
-}
+    &__price {
+        @include font(16px,19px,400);
+        color: #F16D7F;
+    }
+
+    &__button{
+        position: absolute;
+        top: 50%;  
+        left: 50%;
+        transform: translate(-50%, -50%);
+
+        height: 44px;
+        width: 139px;
+        border-radius: 0px;
+        border: 1px solid rgba(255, 255, 255, 1);
+        background-color: rgba(255, 255, 255, 0);
+        color: white;
+        
+
+    }
+
+    
+
+
+  
 
 }
