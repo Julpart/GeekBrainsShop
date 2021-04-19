@@ -1,19 +1,19 @@
 
-:root{
+:root {
     --black-color: #222222;
     --pink-color:  #F1E4E6;
     --dark-pink-color: #F16D7F;
     --gray-color: #f8f8f8;
 
 }
-body{   
+body {   
 font-family: Lato;
 font-size: 14px;
 font-style: normal;
 font-weight: 300;
 line-height: 17px;
 }
-.container{
+.container {
     width: 1148px;
     margin: 0 auto;
 
@@ -29,70 +29,69 @@ line-height: 17px;
     clip: rect(0 0 0 0)
   }
 
-.header{
+.header {
     background-color: var(--black-color);
     margin: 0 0 63px;
 }
-.header__navigation{
+.header__navigation {
     display: none;
 }
-.header__container{
+.header__container {
     display: flex;
     justify-content: space-between;
     min-height: 75px;
     align-items: center;
 
 }
-.header__logo{
+.header__logo {
     margin: 0 41px 0 0;
 }
-.header__button{
+.header__button {
     background: transparent;
     border: none;
     margin: 0 33px 0 0;
 }
-.header__person{
+.header__person {
     margin: 0 33px 0 0;
 
 }
-.brand{
+.brand {
     max-width: 1600px;
-    margin: 0 auto;
     display: flex;
     margin: 0 0 63px;
 }
-.brand__title-container{
+.brand__title-container {
     background: var(--pink-color);
     flex-grow: 1;
     padding: 0 0 0 92px;
     display: flex;
     align-items: center;
 }
-.brand__title{
+.brand__title {
 font-size: 48px;
 font-weight: 900;
 line-height: 58px;
 text-transform: uppercase;
 }
-.brand__sub-title{
+.brand__sub-title {
     font-size: 32px;
     font-weight: 700;
     line-height: 38px;
     display: block;
 }
-.brand__pink-sub-title{
+.brand__pink-sub-title {
     color:var(--dark-pink-color);
 
 }
-.promotions{
+.promotions {
     margin-bottom: 97px;
 }
-.promotions__list{
+.promotions__list {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
 }
-.promotions__item{
+.promotions__item {
     width: 360px;
     min-height:260px;
     display: flex;
@@ -103,38 +102,38 @@ text-transform: uppercase;
    
     
 }
-.promotions__item--women{
+.promotions__item--women {
     background-image: url(../img/women-prom.jpg);
     background-size: cover;
 }
-.promotions__item--man{
+.promotions__item--man {
     background-image: url(../img/man-prom.jpg);
     background-size: cover;
 }
-.promotions__item--kids{
+.promotions__item--kids {
     background-image: url(../img/kids-prom.png);
     background-size: cover;
 }
-.promotions__item--accesories{
+.promotions__item--accesories {
     background-image: url(../img/acs-prom.png);
     background-size: cover;
     width: 100%;
 }
-.promotion__title{
+.promotion__title {
     text-transform: uppercase;
     font-size: 16px;
     font-weight: 400;
     line-height: 19px;
     color: #FBFBFB;
 }
-.promotion__text{
+.promotion__text {
     text-transform: uppercase;
     font-size: 24px;
     font-weight: 700;
     line-height: 29px;   
     color: var(--dark-pink-color);
 }
-.products__title{
+.products__title {
     font-size: 30px;
     font-weight: 400;
     line-height: 36px;
@@ -143,7 +142,7 @@ text-transform: uppercase;
 
 
 }
-.products__text{
+.products__text {
     font-size: 14px;
     font-weight: 400;
     line-height: 17px;
@@ -152,26 +151,26 @@ text-transform: uppercase;
     
 
 }
-.products__caption{
+.products__caption {
     margin-bottom: 48px;
 }
-.products__list{
+.products__list {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
 }
-.products__item{
+.products__item {
   width: 360px; 
   margin: 0 0 30px 0; 
 }
-.product__img{
+.product__img {
     display: block;
 }
-.product__description{
+.product__description {
 background: var(--gray-color);
 padding: 25px 29px 20px 17px;
 }
-.products__button{
+.products__button {
     height: 47px;
     width: 211px;
     left: 695.5px;
@@ -184,14 +183,14 @@ padding: 25px 29px 20px 17px;
     
     
 }
-.products__button-box{
+.products__button-box {
     width: 100%;
     display: flex;
     margin-top: 63px;
     justify-content: center;
     
 }
-.product__title{
+.product__title {
     text-transform: uppercase;
     font-size: 13px;
     font-weight: 400;
@@ -199,42 +198,42 @@ padding: 25px 29px 20px 17px;
     margin-bottom: 12px;
     color: black;
 }
-.product__text{
+.product__text {
     font-size: 14px;
     font-weight: 300;
     line-height: 17px;
     margin-bottom: 18px;
     color:  #5D5D5D;
 }
-.product__price{
+.product__price {
     font-size: 16px;
     font-weight: 400;
     line-height: 19px;
     color: #F16D7F;
 }
-.advantages{
+.advantages {
     background-color: var(--black-color);
     margin: 95px 0 0;
     min-height: 341px;
 }
-.advantages__list{
+.advantages__list {
     display: flex;
     justify-content: space-between;
 
     
 
 }
-.advantages__item{
+.advantages__item {
     width: 360px;
     min-height: 341px;
     display: flex;
     flex-direction: column;
     align-items: center;  
 }
-.advantages__img{
+.advantages__img {
     margin-top: 103px;
 }
-.advantages__title{
+.advantages__title {
     margin-top: 25px;
     font-size: 20px;
     font-weight: 400;
@@ -243,7 +242,7 @@ padding: 25px 29px 20px 17px;
     
 
 }
-.advantages__text{
+.advantages__text {
     margin-top: 16px;
     font-size: 14px;
     font-weight: 300;
@@ -251,16 +250,16 @@ padding: 25px 29px 20px 17px;
     color:  #FBFBFB;
     text-align: center;
 }
-.subscribe{
+.subscribe {
     background-image: url(../img/footer-back.png);
     min-height: 448px;
 }
-.footer-container{
+.footer-container {
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
-.quote{
+.quote {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -270,7 +269,7 @@ padding: 25px 29px 20px 17px;
    
 
 }
-.quote__text{
+.quote__text {
     margin-top: 30px;
     font-size: 20px;
     font-style: italic;
@@ -278,50 +277,194 @@ padding: 25px 29px 20px 17px;
     line-height: 24px;
     text-align: center;
 }
-.subscribe__form{
+.subscribe__form {
     width: 356px;
     display: flex;
     flex-direction: column;
 }
-.subscribe__sub-title{
+.subscribe__sub-title {
     font-size: 24px;
     font-weight: 700;
     line-height: 38px;
     text-align: center;
     display:block;
 }
-.subscribe__title{
-font-size: 18px;
-font-weight: 400;
-line-height: 30px;
-
-text-align: center;
+.subscribe__title {
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 30px;
+    text-align: center;
 
 }
-.social-network{
+.social-network {
     background: #222224;
 
 
 }
-.social-network-container{
+.social-network-container {
     display: flex;
     justify-content: space-between;
     align-items: center;
     min-height: 79px;
 
 }
-.social-network__list{
+.social-network__list {
     display: flex;
 }
-.social-network__item{
+.social-network__item {
     margin-left: 7px;
 }
-.copyright{
+.copyright {
     font-size: 16px;
     font-style: normal;
     font-weight: 400;
     line-height: 19px;
     color: #FBFBFB;
     ;
+
+}
+.header__registration{
+    background-color: var(--black-color);
+    margin : 0;
+}
+.brand__registration{
+    min-height: 148px;
+    display: flex;
+    margin: 0;
+}
+.advantages__registration{
+    background-color: var(--black-color);
+    margin:  0;
+    min-height: 341px;
+}
+.main__registration{
+    display: flex;
+    padding-top: 64px;
+    padding-bottom: 96px;
+
+}
+.registration-title{
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 29px;
+    color:var(--dark-pink-color);
+    text-transform: uppercase;
+
+}
+
+.form-legend{
+
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 19px;
+    margin-bottom: 20,5px;
+
+
+}
+.form-text{
+    display: block;
+    height: 44px;
+    width: 360px;
+    left: 230px;
+    top: 391.5px;
+    border-radius: 0px;
+    border: 1px solid #A4A4A4;
+    margin-top: 21px;
+
+}
+.radio-form{
+    margin-top: 30px;
+    margin-bottom: 30px;
+    
+}
+.password-info{
+    font-size: 13px;
+    font-weight: 300;
+    line-height: 16px;
+    color:  #B1B1B1;
+    width: 360px;
+    margin-top: 15px;
+    margin-bottom: 39px;
+}
+.registration-button{
+    height: 50px;
+    width: 167px;
+    left: 230px;
+    top: 752px;
+    border-radius: 0px;
+    background: #F16D7F;
+}
+.registration-button-text{
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 17px;
+    text-transform: uppercase;
+    color: #FFFFFF;
+}
+.registration-perks{
+    margin-left: 128px;
+}
+.perks-title{
+    font-size: 24px;
+    font-weight: 300;
+    line-height: 29px;
+    text-transform: uppercase;
+    margin-bottom: 22px;
+}
+.perks-text{
+    font-size: 24px;
+    font-weight: 300;
+    line-height: 29px;
+}
+.perks-list{
+    margin-top: 21px;
+    list-style: none;
+}
+.perks-item{
+    margin-bottom: 16px;
+    position: relative;
+}
+.perks-item::before{
+    content: '';
+    position: absolute;
+    width: 20px;
+    height: 16px;
+    background-image: url(../img/mark.svg);
+    background-size: 20px 16px;
+    left: -25px;
+    top: 7px; 
+}
+
+.email-subscribe{
+    height: 49px;
+    width: 256px;
+    left: 917px;
+    top: 243px;
+    border: none;
+    border-radius: 30px;
+    background: #E1E1E1;
+
+    
+}
+
+.button-subs{
+    height: 49px;
+    width: 100px;
+    left: 1173px;
+    top: 243px;
+    border: none;
+    border-radius: 30px;
+    background: #F16D7F;
+
+
+    
+
+}
+.button-text{
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 17px;
+    color:  #FFFFFF;
 
 }

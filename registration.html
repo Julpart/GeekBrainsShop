@@ -14,7 +14,7 @@
 </head>
 
 <body>
-    <header class="header">
+    <header class="header__registration header__container">
         <div class="container header__container">
             <div>
                 <img class="header__logo" src="img/logo.svg" alt="logo" width="44" height="38">
@@ -24,8 +24,8 @@
                 <button type="button" class="header__button">
                     <img src="img/burger.svg" alt="burger" width="32" height="23">
                 </button>
-                <a class="header__person" href="./registration.html"><img src="img/person.svg" alt="person" width="29" height="29"></a>
-                <a href="#"><img src="img/cart.svg" alt="cart" width="32" height="29"></a>
+                <a class="header__person" href="#"><img src="img/person.svg" alt="person" width="29" height="29"></a>
+                <a href="./index.html"><img src="img/cart.svg" alt="cart" width="32" height="29"></a>
             </div>
         </div>
         <nav class="header__navigation">
@@ -67,118 +67,59 @@
         </nav>
     </header>
     <main>
-        <section class="brand">
-            <img src="./img/man.jpg" alt="man" width="800" height="765">
-            <div class="brand__title-container">
-                <h1 class="brand__title">the brand <span class="brand__sub-title">of luxerious<span
-                            class="brand__pink-sub-title"> fashion</span> </span></h1>
+        <section class="brand__registration">
+
+            <div class="brand__title-container ">
+                <h1 class="registration-title">Registration</h1>
             </div>
         </section>
-        <section class="promotions container">
-            <h2 class="visually-hidden">Promotions</h2>
-            <ul class="promotions__list">
-                <li class="promotions__item promotions__item--women">
-                    <h3 class="promotion__title">30% off</h3>
-                    <p class="promotion__text">For women</p>
-                </li>
-                <li class="promotions__item promotions__item--man">
-                    <h3 class="promotion__title">hot deal</h3>
-                    <p class="promotion__text">For men</p>
-                </li>
-                <li class="promotions__item promotions__item--kids">
-                    <h3 class="promotion__title">new arrivals</h3>
-                    <p class="promotion__text">for kids</p>
-                </li>
-                <li class="promotions__item promotions__item--accesories">
-                    <h3 class="promotion__title">luxirous & trendy</h3>
-                    <p class="promotion__text">accesories</p>
-                </li>
-            </ul>
+        <section class="container main__registration">
+            <section class="registration-form">
+                <form action="" method="GET">
+                    <fieldset class="form">
+                        <legend class="form-legend">Your Name</legend>
+                        <input class="form-text" type="text" id="fname" required placeholder="First Name">
+                        <input class="form-text" type="text" id="lname" required placeholder="Last Name">
+                        <div class="radio-form">
+                            <input type="radio" id="male" name="gender" value="male" checked>
+                            <label for="coding">Male</label>
+                            <input type="radio" id="female" name="gender" value="female">
+                            <label for="music">Female</label>
+                        </div>
+                        <legend class="form-legend">Login details</legend>
+                        <input class="form-text" type="email" id="email" required placeholder="Email">
+                        <input class="form-text" type="password" id="pass" required placeholder="Password">
+                        <p class="password-info">Please use 8 or more characters, with at least 1 number and a mixture
+                            of uppercase and
+                            lowercase letters</p>
+                        <button type="submit" class="registration-button"><span class="registration-button-text">Join
+                                Now</span> <img src="./img/arrow.svg" alt="arr"></button>
+
+                        <fieldset>
+
+            </section>
+            <section class="registration-perks">
+                <p class="perks-title ">loyalty has its perks</p>
+                <p class="perks-text">Get in on the loyalty program where you can earn points and unlock serious perks. Starting with these as soon as you join:</p>
+                <ul class="perks-list">
+                    <li class="perks-item"><p class="perks-text">15% off welcome offer
+                    </p></li>
+                    <li class="perks-item"><p class="perks-text">Free shipping, returns and exchanges on all orders
+
+                    </p></li>
+                    <li class="perks-item"><p class="perks-text">$10 off a purchase on your birthday
+
+                    </p></li>
+                    <li class="perks-item"><p class="perks-text">Early access to products</p></li>
+                    <li class="perks-item"><p class="perks-text">Exclusive offers & rewards</p></li>
+                </ul>
+
+            </section>
+
+
         </section>
-        <section class="products container">
-            <div class="products__caption">
-                <h2 class="products__title">Fetured Items</h2>
-                <p class="products__text">shop for items based on what we featured in this week</p>
-            </div>
-            <ul class="products__list">
 
-                <li class="products__item product">
-
-                    <img class="product__img" src="./img/man-product.jpg" alt="man product 1">
-                    <div class="product__description">
-                        <h3 class="product__title">ellery x m'o capsule</h3>
-                        <p class="product__text">Known for her sculptural takes on traditional tailoring, Australian
-                            arbiter
-                            of cool Kym Ellery
-                            teams up with Moda Operandi.</p>
-                        <p class="product__price">$52.00</p>
-                    </div>
-                </li>
-                <li class="products__item product">
-
-                    <img class="product__img" src="./img/women-product.jpg" alt="women product 1">
-                    <div class="product__description">
-                        <h3 class="product__title">ellery x m'o capsule</h3>
-                        <p class="product__text">Known for her sculptural takes on traditional tailoring, Australian
-                            arbiter
-                            of cool Kym Ellery
-                            teams up with Moda Operandi.</p>
-                        <p class="product__price">$52.00</p>
-                    </div>
-                </li>
-                <li class="products__item product">
-
-                    <img class="product__img" src="./img/man-product-2.png" alt="man product 2">
-                    <div class="product__description">
-                        <h3 class="product__title">ellery x m'o capsule</h3>
-                        <p class="product__text">Known for her sculptural takes on traditional tailoring, Australian
-                            arbiter
-                            of cool Kym Ellery
-                            teams up with Moda Operandi.</p>
-                        <p class="product__price">$52.00</p>
-                    </div>
-                </li>
-                <li class="products__item product">
-
-                    <img class="product__img" src="./img/man-product-3.png" alt="man product 3">
-                    <div class="product__description">
-                        <h3 class="product__title">ellery x m'o capsule</h3>
-                        <p class="product__text">Known for her sculptural takes on traditional tailoring, Australian
-                            arbiter
-                            of cool Kym Ellery
-                            teams up with Moda Operandi.</p>
-                        <p class="product__price">$52.00</p>
-                    </div>
-                </li>
-                <li class="products__item product">
-
-                    <img class="product__img" src="./img/women-product-2.png" alt="women product 2">
-                    <div class="product__description">
-                        <h3 class="product__title">ellery x m'o capsule</h3>
-                        <p class="product__text">Known for her sculptural takes on traditional tailoring, Australian
-                            arbiter
-                            of cool Kym Ellery
-                            teams up with Moda Operandi.</p>
-                        <p class="product__price">$52.00</p>
-                    </div>
-                </li>
-                <li class="products__item product">
-
-                    <img class="product__img" src="./img/women-product-3.png" alt="women product 3">
-                    <div class="product__description">
-                        <h3 class="product__title">ellery x m'o capsule</h3>
-                        <p class="product__text">Known for her sculptural takes on traditional tailoring, Australian
-                            arbiter
-                            of cool Kym Ellery
-                            teams up with Moda Operandi.</p>
-                        <p class="product__price">$52.00</p>
-                    </div>
-                </li>
-                <div class="products__button-box">
-                    <button type="button" class="products__button">Browse All Product</button>
-                </div>
-        </section>
-        <section class="advantages">
+        <section class="advantages__registration">
 
 
             <div class="container">
@@ -223,10 +164,10 @@
                 <div class="subscribe-form">
                     <h2 class="subscribe__title"><span class="subscribe__sub-title"> subscribe</span> for our newletter
                         and promotion</h2>
-                        <form class="form-subscribe" action="" method="GET">
-                            <input class="email-subscribe" type="email" required placeholder="Enter Your Email">
-                            <button type="submit" class="button-subs"><span class="button-text">Subscribe</span></button>
-                        </form>
+                    <form class="form-subscribe" action="" method="GET">
+                        <input class="email-subscribe" type="email" required placeholder="Enter Your Email">
+                        <button type="submit" class="button-subs"><span class="button-text">Subscribe</span></button>
+                    </form>
                 </div>
             </div>
         </div>
