@@ -1,0 +1,36 @@
+.registration-perks {
+    margin-left: 128px;
+}
+.perks{
+&__title {
+    @include font(24px, 29px, 300);
+    text-transform: uppercase;
+    margin-bottom: 22px;
+}
+
+&__text {
+    @include font(24px, 29px, 300);
+}
+
+&__list {
+    margin-top: 21px;
+    list-style: none;
+}
+
+&__item {
+    margin-bottom: 16px;
+    position: relative;
+}
+
+&__item::before {
+    content: '';
+    position: absolute;
+    width: 20px;
+    height: 16px;
+    background-image: url(../img/mark.svg);
+    background-size: 20px 16px;
+    left: -25px;
+    top: 7px; 
+}
+
+}

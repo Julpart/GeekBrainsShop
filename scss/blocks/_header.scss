@@ -1,0 +1,50 @@
+.header {
+    background-color: $black-color;
+    margin: 0 0 63px;
+
+    
+    &__navigation {
+        display: none;
+    }
+    
+    &__container {
+        display: flex;
+        justify-content: space-between;
+        min-height: 75px;
+        align-items: center;
+    
+    }
+    
+    &__logo {
+        margin: 0 41px 0 0;
+
+        &:hover,
+        &:focus{
+            opacity: 0.5;
+            outline: none;
+        }
+    }
+    
+    &__button {
+        background: transparent;
+        border: none;
+        margin: 0 33px 0 0;
+    }
+    
+    &__person {
+        margin: 0 33px 0 0;
+        
+        &:hover,
+        &:focus{
+            opacity: 0.5;
+            outline: none;
+        }
+    }
+    &__cart:hover,
+    &__cart:focus{
+        opacity: 0.5;
+        outline: none;
+    }
+    
+}
+

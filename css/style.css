@@ -1,470 +1,555 @@
-
-:root {
-    --black-color: #222222;
-    --pink-color:  #F1E4E6;
-    --dark-pink-color: #F16D7F;
-    --gray-color: #f8f8f8;
-
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  vertical-align: baseline;
 }
-body {   
-font-family: Lato;
-font-size: 14px;
-font-style: normal;
-font-weight: 300;
-line-height: 17px;
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
 }
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+body {
+  font-family: Lato;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 17px;
+}
+
 .container {
-    width: 1148px;
-    margin: 0 auto;
-
+  width: 1148px;
+  margin: 0 auto;
 }
+
 .visually-hidden {
-    position: absolute;
-    width: 1px;
-    height: 1px;
-    margin: -1px;
-    padding: 0;
-    overflow: hidden;
-    border: 0;
-    clip: rect(0 0 0 0)
-  }
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  overflow: hidden;
+  border: 0;
+  clip: rect(0 0 0 0);
+}
 
 .header {
-    background-color: var(--black-color);
-    margin: 0 0 63px;
+  background-color: #222222;
+  margin: 0 0 63px;
 }
+
 .header__navigation {
-    display: none;
+  display: none;
 }
+
 .header__container {
-    display: flex;
-    justify-content: space-between;
-    min-height: 75px;
-    align-items: center;
-
+  display: flex;
+  justify-content: space-between;
+  min-height: 75px;
+  align-items: center;
 }
+
 .header__logo {
-    margin: 0 41px 0 0;
+  margin: 0 41px 0 0;
 }
+
+.header__logo:hover, .header__logo:focus {
+  opacity: 0.5;
+  outline: none;
+}
+
 .header__button {
-    background: transparent;
-    border: none;
-    margin: 0 33px 0 0;
+  background: transparent;
+  border: none;
+  margin: 0 33px 0 0;
 }
+
 .header__person {
-    margin: 0 33px 0 0;
-
+  margin: 0 33px 0 0;
 }
+
+.header__person:hover, .header__person:focus {
+  opacity: 0.5;
+  outline: none;
+}
+
+.header__cart:hover, .header__cart:focus {
+  opacity: 0.5;
+  outline: none;
+}
+
 .brand {
-    max-width: 1600px;
-    display: flex;
-    margin: 0 0 63px;
+  max-width: 1600px;
+  display: flex;
+  margin: 0 0 63px;
 }
+
 .brand__title-container {
-    background: var(--pink-color);
-    flex-grow: 1;
-    padding: 0 0 0 92px;
-    display: flex;
-    align-items: center;
+  background: #F1E4E6;
+  flex-grow: 1;
+  padding: 0 0 0 92px;
+  display: flex;
+  align-items: center;
 }
+
 .brand__title {
-font-size: 48px;
-font-weight: 900;
-line-height: 58px;
-text-transform: uppercase;
+  font-size: 48px;
+  line-height: 58px;
+  font-weight: 900;
+  text-transform: uppercase;
 }
+
 .brand__sub-title {
-    font-size: 32px;
-    font-weight: 700;
-    line-height: 38px;
-    display: block;
+  font-size: 32px;
+  line-height: 38px;
+  font-weight: 700;
+  display: block;
 }
+
 .brand__pink-sub-title {
-    color:var(--dark-pink-color);
-
+  color: #F16D7F;
 }
+
 .promotions {
-    margin-bottom: 97px;
+  margin-bottom: 97px;
 }
+
 .promotions__list {
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
 }
+
 .promotions__item {
-    width: 360px;
-    min-height:260px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    margin: 0 0 30px;
-   
-    
+  width: 360px;
+  min-height: 260px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 0 0 30px;
 }
+
 .promotions__item--women {
-    background-image: url(../img/women-prom.jpg);
-    background-size: cover;
+  background-image: url(../img/women-prom.jpg);
+  background-size: cover;
 }
+
 .promotions__item--man {
-    background-image: url(../img/man-prom.jpg);
-    background-size: cover;
+  background-image: url(../img/man-prom.jpg);
+  background-size: cover;
 }
+
 .promotions__item--kids {
-    background-image: url(../img/kids-prom.png);
-    background-size: cover;
+  background-image: url(../img/kids-prom.png);
+  background-size: cover;
 }
+
 .promotions__item--accesories {
-    background-image: url(../img/acs-prom.png);
-    background-size: cover;
-    width: 100%;
+  background-image: url(../img/acs-prom.png);
+  background-size: cover;
+  width: 100%;
 }
+
 .promotion__title {
-    text-transform: uppercase;
-    font-size: 16px;
-    font-weight: 400;
-    line-height: 19px;
-    color: #FBFBFB;
+  text-transform: uppercase;
+  font-size: 16px;
+  line-height: 19px;
+  font-weight: 400;
+  color: #FBFBFB;
 }
+
 .promotion__text {
-    text-transform: uppercase;
-    font-size: 24px;
-    font-weight: 700;
-    line-height: 29px;   
-    color: var(--dark-pink-color);
+  text-transform: uppercase;
+  font-size: 24px;
+  line-height: 29px;
+  font-weight: 700;
+  color: #F16D7F;
 }
+
 .products__title {
-    font-size: 30px;
-    font-weight: 400;
-    line-height: 36px;
-    text-align: center;
-    
-
-
+  font-size: 30px;
+  line-height: 36px;
+  font-weight: 400;
+  text-align: center;
 }
+
 .products__text {
-    font-size: 14px;
-    font-weight: 400;
-    line-height: 17px;
-    text-align: center;
-    color: #9F9F9F;
-    
-
+  font-size: 14px;
+  line-height: 17px;
+  font-weight: 400;
+  text-align: center;
+  color: #9F9F9F;
 }
+
 .products__caption {
-    margin-bottom: 48px;
+  margin-bottom: 48px;
 }
+
 .products__list {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
 }
+
 .products__item {
-  width: 360px; 
-  margin: 0 0 30px 0; 
+  width: 360px;
+  margin: 0 0 30px 0;
 }
-.product__img {
-    display: block;
-}
-.product__description {
-background: var(--gray-color);
-padding: 25px 29px 20px 17px;
-}
+
 .products__button {
-    height: 47px;
-    width: 211px;
-    left: 695.5px;
-    top: 2817.5px;
-    border-radius: 1px;
-    border-color: #FF6A6A;
-    background-color: white;
-    color: #F26376;
-    
-    
-    
+  height: 47px;
+  width: 211px;
+  left: 695.5px;
+  top: 2817.5px;
+  border-radius: 1px;
+  border-color: #FF6A6A;
+  background-color: white;
+  color: #F26376;
 }
+
 .products__button-box {
-    width: 100%;
-    display: flex;
-    margin-top: 63px;
-    justify-content: center;
-    
+  width: 100%;
+  display: flex;
+  margin-top: 63px;
+  justify-content: center;
 }
+
+.product__img {
+  display: block;
+}
+
+.product__description {
+  background: var(--gray-color);
+  padding: 25px 29px 20px 17px;
+}
+
 .product__title {
-    text-transform: uppercase;
-    font-size: 13px;
-    font-weight: 400;
-    line-height: 16px;
-    margin-bottom: 12px;
-    color: black;
+  text-transform: uppercase;
+  font-size: 13px;
+  line-height: 16px;
+  font-weight: 400;
+  margin-bottom: 12px;
+  color: black;
 }
+
 .product__text {
-    font-size: 14px;
-    font-weight: 300;
-    line-height: 17px;
-    margin-bottom: 18px;
-    color:  #5D5D5D;
+  font-size: 14px;
+  line-height: 17px;
+  font-weight: 300;
+  margin-bottom: 18px;
+  color: #5D5D5D;
 }
+
 .product__price {
-    font-size: 16px;
-    font-weight: 400;
-    line-height: 19px;
-    color: #F16D7F;
+  font-size: 16px;
+  line-height: 19px;
+  font-weight: 400;
+  color: #F16D7F;
 }
+
 .advantages {
-    background-color: var(--black-color);
-    margin: 95px 0 0;
-    min-height: 341px;
+  background-color: #222222;
+  margin: 95px 0 0;
+  min-height: 341px;
 }
+
 .advantages__list {
-    display: flex;
-    justify-content: space-between;
-
-    
-
+  display: flex;
+  justify-content: space-between;
 }
+
 .advantages__item {
-    width: 360px;
-    min-height: 341px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;  
+  width: 360px;
+  min-height: 341px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
+
 .advantages__img {
-    margin-top: 103px;
+  margin-top: 103px;
 }
+
 .advantages__title {
-    margin-top: 25px;
-    font-size: 20px;
-    font-weight: 400;
-    line-height: 24px;
-    color: #FBFBFB;
-    
-
+  margin-top: 25px;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 24px;
+  color: #FBFBFB;
 }
+
 .advantages__text {
-    margin-top: 16px;
-    font-size: 14px;
-    font-weight: 300;
-    line-height: 17px;
-    color:  #FBFBFB;
-    text-align: center;
+  margin-top: 16px;
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 17px;
+  color: #FBFBFB;
+  text-align: center;
 }
-.subscribe {
-    background-image: url(../img/footer-back.png);
-    min-height: 448px;
-}
+
 .footer-container {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
-.quote {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    width: 360px;
-    min-height: 448px;
-   
 
+.subscribe {
+  background-image: url(../img/footer-back.png);
+  min-height: 448px;
 }
-.quote__text {
-    margin-top: 30px;
-    font-size: 20px;
-    font-style: italic;
-    font-weight: 400;
-    line-height: 24px;
-    text-align: center;
+
+.subscribe__quote {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 360px;
+  min-height: 448px;
 }
+
+.subscribe__quote-text {
+  margin-top: 30px;
+  font-style: italic;
+  font-size: 20px;
+  line-height: 24px;
+  font-weight: 400;
+  text-align: center;
+}
+
 .subscribe__form {
-    width: 356px;
-    display: flex;
-    flex-direction: column;
+  width: 356px;
+  display: flex;
+  flex-direction: column;
 }
+
 .subscribe__sub-title {
-    font-size: 24px;
-    font-weight: 700;
-    line-height: 38px;
-    text-align: center;
-    display:block;
+  font-size: 24px;
+  line-height: 38px;
+  font-weight: 700;
+  text-align: center;
+  display: block;
 }
+
 .subscribe__title {
-    font-size: 18px;
-    font-weight: 400;
-    line-height: 30px;
-    text-align: center;
-
+  font-size: 18px;
+  line-height: 30px;
+  font-weight: 400;
+  text-align: center;
 }
+
+.subscribe .email-subscribe {
+  height: 49px;
+  width: 256px;
+  left: 917px;
+  top: 243px;
+  border: none;
+  border-radius: 30px;
+  background: #E1E1E1;
+}
+
+.subscribe .button-subs {
+  height: 49px;
+  width: 100px;
+  left: 1173px;
+  top: 243px;
+  border: none;
+  border-radius: 30px;
+  background: #F16D7F;
+}
+
+.subscribe .button-text {
+  font-size: 14px;
+  line-height: 17px;
+  font-weight: 400;
+  color: #FFFFFF;
+}
+
 .social-network {
-    background: #222224;
-
-
+  background: #222224;
 }
+
 .social-network-container {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    min-height: 79px;
-
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  min-height: 79px;
 }
+
 .social-network__list {
-    display: flex;
+  display: flex;
 }
+
 .social-network__item {
-    margin-left: 7px;
+  margin-left: 7px;
 }
+
 .copyright {
-    font-size: 16px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 19px;
-    color: #FBFBFB;
-    ;
-
-}
-.header__registration{
-    background-color: var(--black-color);
-    margin : 0;
-}
-.brand__registration{
-    min-height: 148px;
-    display: flex;
-    margin: 0;
-}
-.advantages__registration{
-    background-color: var(--black-color);
-    margin:  0;
-    min-height: 341px;
-}
-.main__registration{
-    display: flex;
-    padding-top: 64px;
-    padding-bottom: 96px;
-
-}
-.registration-title{
-    font-size: 24px;
-    font-weight: 400;
-    line-height: 29px;
-    color:var(--dark-pink-color);
-    text-transform: uppercase;
-
+  font-size: 16px;
+  line-height: 19px;
+  font-weight: 400;
+  color: #FBFBFB;
 }
 
-.form-legend{
-
-    font-size: 16px;
-    font-weight: 300;
-    line-height: 19px;
-    margin-bottom: 20,5px;
-
-
-}
-.form-text{
-    display: block;
-    height: 44px;
-    width: 360px;
-    left: 230px;
-    top: 391.5px;
-    border-radius: 0px;
-    border: 1px solid #A4A4A4;
-    margin-top: 21px;
-
-}
-.radio-form{
-    margin-top: 30px;
-    margin-bottom: 30px;
-    
-}
-.password-info{
-    font-size: 13px;
-    font-weight: 300;
-    line-height: 16px;
-    color:  #B1B1B1;
-    width: 360px;
-    margin-top: 15px;
-    margin-bottom: 39px;
-}
-.registration-button{
-    height: 50px;
-    width: 167px;
-    left: 230px;
-    top: 752px;
-    border-radius: 0px;
-    background: #F16D7F;
-}
-.registration-button-text{
-    font-size: 14px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 17px;
-    text-transform: uppercase;
-    color: #FFFFFF;
-}
-.registration-perks{
-    margin-left: 128px;
-}
-.perks-title{
-    font-size: 24px;
-    font-weight: 300;
-    line-height: 29px;
-    text-transform: uppercase;
-    margin-bottom: 22px;
-}
-.perks-text{
-    font-size: 24px;
-    font-weight: 300;
-    line-height: 29px;
-}
-.perks-list{
-    margin-top: 21px;
-    list-style: none;
-}
-.perks-item{
-    margin-bottom: 16px;
-    position: relative;
-}
-.perks-item::before{
-    content: '';
-    position: absolute;
-    width: 20px;
-    height: 16px;
-    background-image: url(../img/mark.svg);
-    background-size: 20px 16px;
-    left: -25px;
-    top: 7px; 
+.registration__header {
+  background-color: #222222;
+  margin: 0;
 }
 
-.email-subscribe{
-    height: 49px;
-    width: 256px;
-    left: 917px;
-    top: 243px;
-    border: none;
-    border-radius: 30px;
-    background: #E1E1E1;
-
-    
+.registration__brand {
+  min-height: 148px;
+  display: flex;
+  margin: 0;
 }
 
-.button-subs{
-    height: 49px;
-    width: 100px;
-    left: 1173px;
-    top: 243px;
-    border: none;
-    border-radius: 30px;
-    background: #F16D7F;
-
-
-    
-
+.registration__advantages {
+  background-color: #222222;
+  margin: 0;
+  min-height: 341px;
 }
-.button-text{
-    font-size: 14px;
-    font-weight: 400;
-    line-height: 17px;
-    color:  #FFFFFF;
 
+.registration__main {
+  display: flex;
+  padding-top: 64px;
+  padding-bottom: 96px;
 }
+
+.registration-title {
+  font-size: 24px;
+  line-height: 29px;
+  font-weight: 400;
+  color: #F16D7F;
+  text-transform: uppercase;
+}
+
+.registration-form__form-legend {
+  font-size: 16px;
+  line-height: 19px;
+  font-weight: 300;
+  margin-bottom: 20,5px;
+}
+
+.registration-form__form-text {
+  display: block;
+  height: 44px;
+  width: 360px;
+  left: 230px;
+  top: 391.5px;
+  border-radius: 0px;
+  border: 1px solid #A4A4A4;
+  margin-top: 21px;
+}
+
+.registration-form__radio-form {
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+.registration-form__password-info {
+  font-size: 13px;
+  line-height: 16px;
+  font-weight: 300;
+  color: #B1B1B1;
+  width: 360px;
+  margin-top: 15px;
+  margin-bottom: 39px;
+}
+
+.registration-form__registration-button {
+  height: 50px;
+  width: 167px;
+  left: 230px;
+  top: 752px;
+  border-radius: 0px;
+  background: #F16D7F;
+}
+
+.registration-form__registration-button-text {
+  font-size: 14px;
+  line-height: 17px;
+  font-weight: 400;
+  text-transform: uppercase;
+  color: #FFFFFF;
+}
+
+.registration-perks {
+  margin-left: 128px;
+}
+
+.perks__title {
+  font-size: 24px;
+  line-height: 29px;
+  font-weight: 300;
+  text-transform: uppercase;
+  margin-bottom: 22px;
+}
+
+.perks__text {
+  font-size: 24px;
+  line-height: 29px;
+  font-weight: 300;
+}
+
+.perks__list {
+  margin-top: 21px;
+  list-style: none;
+}
+
+.perks__item {
+  margin-bottom: 16px;
+  position: relative;
+}
+
+.perks__item::before {
+  content: '';
+  position: absolute;
+  width: 20px;
+  height: 16px;
+  background-image: url(../img/mark.svg);
+  background-size: 20px 16px;
+  left: -25px;
+  top: 7px;
+}
+/*# sourceMappingURL=style.css.map */

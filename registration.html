@@ -14,10 +14,10 @@
 </head>
 
 <body>
-    <header class="header__registration header__container">
+    <header class="registration__header header__container">
         <div class="container header__container">
             <div>
-                <img class="header__logo" src="img/logo.svg" alt="logo" width="44" height="38">
+                <a href="./index.html" class="header__logo"> <img class="header__logo" src="img/logo.svg" alt="logo" width="44" height="38"></a>
                 <img src="img/search.svg" alt="search" width="26" height="28">
             </div>
             <div>
@@ -67,51 +67,51 @@
         </nav>
     </header>
     <main>
-        <section class="brand__registration">
+        <section class="registration__brand">
 
             <div class="brand__title-container ">
                 <h1 class="registration-title">Registration</h1>
             </div>
         </section>
-        <section class="container main__registration">
+        <section class="container registration__main">
             <section class="registration-form">
                 <form action="" method="GET">
                     <fieldset class="form">
-                        <legend class="form-legend">Your Name</legend>
-                        <input class="form-text" type="text" id="fname" required placeholder="First Name">
-                        <input class="form-text" type="text" id="lname" required placeholder="Last Name">
-                        <div class="radio-form">
+                        <legend class="registration-form__form-legend">Your Name</legend>
+                        <input class="registration-form__form-text" type="text" id="fname" required placeholder="First Name">
+                        <input class="registration-form__form-text" type="text" id="lname" required placeholder="Last Name">
+                        <div class="registration-form__radio-form">
                             <input type="radio" id="male" name="gender" value="male" checked>
                             <label for="coding">Male</label>
                             <input type="radio" id="female" name="gender" value="female">
                             <label for="music">Female</label>
                         </div>
-                        <legend class="form-legend">Login details</legend>
-                        <input class="form-text" type="email" id="email" required placeholder="Email">
-                        <input class="form-text" type="password" id="pass" required placeholder="Password">
-                        <p class="password-info">Please use 8 or more characters, with at least 1 number and a mixture
+                        <legend class="registration-form__form-legend">Login details</legend>
+                        <input class="registration-form__form-text" type="email" id="email" required placeholder="Email">
+                        <input class="registration-form__form-text" type="password" id="pass" required placeholder="Password">
+                        <p class="registration-form__password-info">Please use 8 or more characters, with at least 1 number and a mixture
                             of uppercase and
                             lowercase letters</p>
-                        <button type="submit" class="registration-button"><span class="registration-button-text">Join
+                        <button type="submit" class="registration-form__registration-button"><span class="registration-form__registration-button-text">Join
                                 Now</span> <img src="./img/arrow.svg" alt="arr"></button>
 
                         <fieldset>
 
             </section>
             <section class="registration-perks">
-                <p class="perks-title ">loyalty has its perks</p>
-                <p class="perks-text">Get in on the loyalty program where you can earn points and unlock serious perks. Starting with these as soon as you join:</p>
-                <ul class="perks-list">
-                    <li class="perks-item"><p class="perks-text">15% off welcome offer
+                <p class="perks__title ">loyalty has its perks</p>
+                <p class="perks__text">Get in on the loyalty program where you can earn points and unlock serious perks. Starting with these as soon as you join:</p>
+                <ul class="perks__list">
+                    <li class="perks__item"><p class="perks__text">15% off welcome offer
                     </p></li>
-                    <li class="perks-item"><p class="perks-text">Free shipping, returns and exchanges on all orders
+                    <li class="perks__item"><p class="perks__text">Free shipping, returns and exchanges on all orders
 
                     </p></li>
-                    <li class="perks-item"><p class="perks-text">$10 off a purchase on your birthday
+                    <li class="perks__item"><p class="perks__text">$10 off a purchase on your birthday
 
                     </p></li>
-                    <li class="perks-item"><p class="perks-text">Early access to products</p></li>
-                    <li class="perks-item"><p class="perks-text">Exclusive offers & rewards</p></li>
+                    <li class="perks__item"><p class="perks__text">Early access to products</p></li>
+                    <li class="perks__item"><p class="perks__text">Exclusive offers & rewards</p></li>
                 </ul>
 
             </section>
@@ -119,7 +119,7 @@
 
         </section>
 
-        <section class="advantages__registration">
+        <section class="registration__advantages">
 
 
             <div class="container">
@@ -156,18 +156,18 @@
     <footer class="footer">
         <div class="subscribe">
             <div class="container footer-container">
-                <div class="quote">
+                <div class="subscribe__quote">
                     <img src="./img/Avatar.png" alt="Avatar" width="96" height="96">
-                    <p class="quote__text">“Vestibulum quis porttitor dui! Quisque viverra nunc mi, a pulvinar purus
+                    <p class="subscribe__quote-text">“Vestibulum quis porttitor dui! Quisque viverra nunc mi, a pulvinar purus
                         condimentum“</p>
                 </div>
-                <div class="subscribe-form">
+                <div class="subscribe__form">
                     <h2 class="subscribe__title"><span class="subscribe__sub-title"> subscribe</span> for our newletter
                         and promotion</h2>
-                    <form class="form-subscribe" action="" method="GET">
-                        <input class="email-subscribe" type="email" required placeholder="Enter Your Email">
-                        <button type="submit" class="button-subs"><span class="button-text">Subscribe</span></button>
-                    </form>
+                        <form class="subscribe__form-footer" action="" method="GET">
+                            <input class="email-subscribe" type="email" required placeholder="Enter Your Email">
+                            <button type="submit" class="button-subs"><span class="button-text">Subscribe</span></button>
+                        </form>
                 </div>
             </div>
         </div>
