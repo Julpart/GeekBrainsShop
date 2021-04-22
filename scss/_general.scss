@@ -23,9 +23,30 @@ body {
         clip: rect(0 0 0 0)
       }
 
+      .cart-general{
+        padding-top: 96px;
+        padding-bottom: 129px;
+        display: flex;
+        justify-content: space-between;
+        @include tablet{
+          flex-direction: column;
+          justify-content: flex-end;
+          align-items: center;
+        }
+
+        
+
+      }
+
       @media(max-width: $desktop-w){
           .container{
             width: 96%;
           }
       }
-      
+      @media(max-width: $tablet-w){
+        .container{
+          width: 100%;
+        }
+    }
+    
+    

@@ -25,7 +25,7 @@
                 <button type="button" class="header__button">
                     <img src="img/burger.svg" alt="burger" width="32" height="23">
                 </button>
-                <a class="header__person" href="#"><img src="img/person.svg" alt="person" width="29" height="29"></a>
+                <a class="header__person" href="./registration.html"><img src="img/person.svg" alt="person" width="29" height="29"></a>
                 <a class="header__person" href="./cart.html"><img src="img/cart.svg" alt="cart" width="32"
                         height="29"></a>
             </div>
@@ -68,111 +68,95 @@
             </ul>
         </nav>
     </header>
+
     <main>
         <section class="registration__brand">
 
             <div class="brand__title-container ">
-                <h1 class="registration-title">Registration</h1>
+                <h1 class="registration-title">shopping cart</h1>
             </div>
         </section>
-        <section class="container registration__main">
-            <section class="registration-form">
-                <form action="" method="GET">
-                    <fieldset class="form">
-                        <legend class="registration-form__form-legend">Your Name</legend>
-                        <input class="registration-form__form-text" type="text" id="fname" required
-                            placeholder="First Name">
-                        <input class="registration-form__form-text" type="text" id="lname" required
-                            placeholder="Last Name">
-                        <div class="registration-form__radio-form">
-                            <input type="radio" id="male" name="gender" value="male" checked>
-                            <label for="coding">Male</label>
-                            <input type="radio" id="female" name="gender" value="female">
-                            <label for="music">Female</label>
+        <section class="container cart-general">
+            <section class="cart-main">
+                <ul class="cart-main__shop-list">
+                    <li class="cart-main__shop-item">
+                        <img class="cart-main__shop-img" src="./img/man-product-2.png" alt="man product 2">
+                        <div class="cart-main__shop-container" >
+                            <h2 class="cart-main__shop-title">mango people t-shirt</h2>
+                            <ul class="cart-main__specifications-list">
+                                <li class="cart-main__specifications-item">
+                                    <p class="cart-main__specifications-text"><span class="cart-main__specifications-text-pink"> $300</span> </p>
+                                </li>
+                                <li class="cart-main__specifications-item">
+                                    <p class="cart-main__specifications-text">Color: Red </p>
+                                </li>
+                                <li class="cart-main__specifications-item">
+                                    <p class="cart-main__specifications-text">Size: Xl</p>
+                                </li>
+                                <li class="cart-main__specifications-item">
+                                    <p class="cart-main__specifications-text">Quantity: </p>
+                                </li>
+                            </ul>
                         </div>
-                        <legend class="registration-form__form-legend">Login details</legend>
-                        <input class="registration-form__form-text" type="email" id="email" required
-                            placeholder="Email">
-                        <input class="registration-form__form-text" type="password" id="pass" required
-                            placeholder="Password">
-                        <p class="registration-form__password-info">Please use 8 or more characters, with at least 1
-                            number and a mixture
-                            of uppercase and
-                            lowercase letters</p>
-                        <button type="submit" class="registration-form__registration-button"><span
-                                class="registration-form__registration-button-text">Join
-                                Now</span> <img src="./img/arrow.svg" alt="arr"></button>
-
-                    </fieldset>
-
-            </section>
-            <section class="registration-perks">
-                <p class="perks__title ">loyalty has its perks</p>
-                <p class="perks__text">Get in on the loyalty program where you can earn points and unlock serious perks.
-                    Starting with these as soon as you join:</p>
-                <ul class="perks__list">
-                    <li class="perks__item">
-                        <p class="perks__text">15% off welcome offer
-                        </p>
                     </li>
-                    <li class="perks__item">
-                        <p class="perks__text">Free shipping, returns and exchanges on all orders
-
-                        </p>
-                    </li>
-                    <li class="perks__item">
-                        <p class="perks__text">$10 off a purchase on your birthday
-
-                        </p>
-                    </li>
-                    <li class="perks__item">
-                        <p class="perks__text">Early access to products</p>
-                    </li>
-                    <li class="perks__item">
-                        <p class="perks__text">Exclusive offers & rewards</p>
+                    <li class="cart-main__shop-item">
+                        <img class="cart-main__shop-img" src="./img/man-product-2.png" alt="man product 2">
+                        <div class="cart-main__shop-container">
+                            <h2 class="cart-main__shop-title">mango people t-shirt</h2>
+                            <ul class="cart-main__specifications-list">
+                                <li class="cart-main__specifications-item">
+                                    <p class="cart-main__specifications-text">Price:<span class="cart-main__specifications-text-pink"> $300</span> </p>
+                                </li>
+                                <li class="cart-main__specifications-item">
+                                    <p class="cart-main__specifications-text">Color: Red </p>
+                                </li>
+                                <li class="cart-main__specifications-item">
+                                    <p class="cart-main__specifications-text">Size: Xl</p>
+                                </li>
+                                <li class="cart-main__specifications-item">
+                                    <p class="cart-main__specifications-text">Quantity: </p>
+                                </li>
+                            </ul>
+                        </div>
                     </li>
                 </ul>
+                <div class="cart-main__button-box">
+                    <button type="button" class="cart-main__button">CLEAR SHOPPING CART</button>
+                    <button type="button" class="cart-main__button">CONTINUE SHOPPING</button>
+                </div>
+
 
             </section>
 
+            <section class="cart-form">
+                <div class="cart-form__form-section">
+                    <form action="" method="GET">
+                        <fieldset class="form">
+                            <legend class="cart-form__form-legend">shipping adress</legend>
+                            <input class="cart-form__form-text" type="text" id="fname" required
+                                placeholder="Bangladesh">
+                            <input class="cart-form__form-text" type="text" id="lname" required placeholder="State">
+                            <input class="cart-form__form-text" type="text" id="lname" required
+                                placeholder="Postcode/Zip">
+                            <button type="submit" class="cart-form__button">GET A QUOTE </button>
 
+                        </fieldset>
+                </div>
+                <div class="cart-form__buy-section">
+                    <p class="cart-form__buy-section-text"> sub total $900</p>
+                    <h3 class="cart-form__buy-section-title"> grand total <span class="cart-form__buy-section-title-pink"> $900</span></h3>
+                    <hr class="cart-form__line">
+                    <button type="button" class="cart-form__button-buy">PROCEED TO CHECKOUT</button>
+                </div>
+
+            </section>
         </section>
 
-        <section class="registration__advantages">
 
 
-            <div class="container">
-                <ul class="advantages__list">
-                    <li class="advantages__item">
-
-                        <img class="advantages__img" src="./img/car.svg" alt="car">
-                        <h3 class="advantages__title">Free Delivery</h3>
-                        <p class="advantages__text">Worldwide delivery on all. Authorit tively morph next-generation
-                            innov tion with extensive
-                            models.</p>
-
-                    </li>
-                    <li class="advantages__item">
-                        <img class="advantages__img" src="./img/sales.svg" alt="sales">
-                        <h3 class="advantages__title">Sales & discounts</h3>
-                        <p class="advantages__text">Worldwide delivery on all. Authorit tively morph next-generation
-                            innov tion with extensive
-                            models.</p>
-
-                    </li>
-                    <li class="advantages__item">
-                        <img class="advantages__img" src="./img/crown.svg" alt="crown">
-                        <h3 class="advantages__title">Quality assurance</h3>
-                        <p class="advantages__text">Worldwide delivery on all. Authorit tively morph next-generation
-                            innov tion with extensive
-                            models.</p>
-
-                    </li>
-                </ul>
-            </div>
-        </section>
     </main>
-    <footer class="footer">
+
+    <footer>
         <div class="subscribe">
             <div class="container footer-container">
                 <div class="subscribe__quote">
@@ -210,8 +194,8 @@
                 </ul>
             </div>
         </section>
-
     </footer>
+
 
 </body>
 

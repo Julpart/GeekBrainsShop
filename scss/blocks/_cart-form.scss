@@ -1,0 +1,98 @@
+.cart-form {
+    display: flex;
+    flex-direction: column;
+    width: 360px;
+    @include tablet{
+        flex-direction:row;
+        justify-content: space-between;
+        width: 100%;
+    }
+    @include mobile{
+        flex-direction: column;
+        align-items: center;
+    }
+    &__form-section{
+        display: flex;
+        flex-direction: column;
+    }
+
+    &__form-legend{
+        @include font(16px,19px,300);   
+        text-transform: uppercase;
+    }
+    &__form-text {
+        display: block;
+        height: 44px;
+        width: 360px;
+        left: 230px;
+        top: 391.5px;
+        border-radius: 0px;
+        border: 1px solid #A4A4A4;
+        margin-top: 21px;
+    }
+    &__button {
+        height: 34px;
+        width: 100.4px;
+        border-radius: 0px;
+        @include font(11px,13px,300);
+        color:  rgba(74, 74, 74, 1);
+        border: 1px solid #A4A4A4;
+        background-color: white;
+        margin-top: 24px;
+        
+    }
+    &__buy-section {
+        margin-top: 39.5px;
+        background-color: rgba(245, 243, 243, 1);
+        height: 133px;
+        width: 273px;
+        padding: 39px 43px 42px 44px;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+
+    }
+    
+    &__buy-section-text{
+        @include font(11px, 13px, 400);
+        color: rgba(74, 74, 74, 1);
+        text-transform: uppercase;
+        margin-bottom: 12px;
+
+    }
+    &__buy-section-title{
+        @include font(16px, 19px, 300);
+        color: rgba(74, 74, 74, 1);
+        text-transform: uppercase;
+        margin-bottom: 21px;
+
+    }
+
+    &__buy-section-title-pink{
+        color: #F16D7F;
+        font-weight: 700;
+    }
+
+    &__line{
+        color: #E2E2E2;
+        height: 1px;
+        width: 275px;
+        border-radius: 0px;
+        margin-bottom: 17px;
+
+    }
+    &__button-buy{
+        height: 50px;
+        width: 273px;
+        border-radius: 0px;
+        background-color: rgba(241, 109, 127, 1);
+        color: white;
+        @include font(16px,19px,300);
+        border: 1px solid #A4A4A4;
+        align-self: center;
+
+    }
+
+
+    
+}
