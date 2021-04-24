@@ -1,6 +1,6 @@
 .header {
     background-color: $black-color;
-    margin: 0 0 63px;
+    margin: 0;
 
     
     &__navigation {
@@ -46,5 +46,25 @@
         outline: none;
     }
     
+}
+
+@media (max-width: $desktop-w){
+    .header{
+        padding: 0 16px;
+    }
+
+}
+
+@media (max-width: $tablet-w){
+    .header{
+        padding: 0 16px;
+    
+    &__person,
+    &__cart{
+        display: none;
+    }
+}
+
+   
 }
 

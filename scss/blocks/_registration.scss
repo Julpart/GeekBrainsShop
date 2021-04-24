@@ -22,12 +22,20 @@
     padding-top: 64px;
     padding-bottom: 96px;
 
+    @include mobile{
+        flex-direction: column;
+    }
+
 }
 
 &-title {
     @include font(24px, 29px, 400);
     color:$dark-pink-color;
     text-transform: uppercase;
+    @include mobile{
+        text-align: center;
+
+    }
 
 }
 

@@ -60,7 +60,7 @@ body {
 }
 
 .container {
-  width: 1148px;
+  width: 72%;
   margin: 0 auto;
 }
 
@@ -75,9 +75,15 @@ body {
   clip: rect(0 0 0 0);
 }
 
+@media (max-width: 1024px) {
+  .container {
+    width: 96%;
+  }
+}
+
 .header {
   background-color: #222222;
-  margin: 0 0 63px;
+  margin: 0;
 }
 
 .header__navigation {
@@ -120,10 +126,31 @@ body {
   outline: none;
 }
 
+@media (max-width: 1024px) {
+  .header {
+    padding: 0 16px;
+  }
+}
+
+@media (max-width: 767px) {
+  .header {
+    padding: 0 16px;
+  }
+  .header__person, .header__cart {
+    display: none;
+  }
+}
+
 .brand {
   max-width: 1600px;
   display: flex;
   margin: 0 0 63px;
+}
+
+@media (max-width: 767px) {
+  .brand {
+    min-height: 363px;
+  }
 }
 
 .brand__title-container {
@@ -132,6 +159,19 @@ body {
   padding: 0 0 0 92px;
   display: flex;
   align-items: center;
+  width: 50%;
+}
+
+@media (max-width: 1024px) {
+  .brand__title-container {
+    padding: 0 0 0 69px;
+  }
+}
+
+@media (max-width: 767px) {
+  .brand__title-container {
+    padding: 0 0 0 83px;
+  }
 }
 
 .brand__title {
@@ -141,6 +181,22 @@ body {
   text-transform: uppercase;
 }
 
+@media (max-width: 1024px) {
+  .brand__title {
+    font-size: 44px;
+    line-height: 52px;
+    font-weight: 900;
+  }
+}
+
+@media (max-width: 767px) {
+  .brand__title {
+    font-size: 38px;
+    line-height: 46px;
+    font-weight: 900;
+  }
+}
+
 .brand__sub-title {
   font-size: 32px;
   line-height: 38px;
@@ -148,8 +204,35 @@ body {
   display: block;
 }
 
+@media (max-width: 1024px) {
+  .brand__sub-title {
+    font-size: 24px;
+    line-height: 29px;
+    font-weight: 700;
+  }
+}
+
+@media (max-width: 767px) {
+  .brand__sub-title {
+    font-size: 20px;
+    line-height: 24px;
+    font-weight: 700;
+  }
+}
+
 .brand__pink-sub-title {
   color: #F16D7F;
+}
+
+.brand__img {
+  height: auto;
+  width: 50%;
+}
+
+@media (max-width: 767px) {
+  .brand__img {
+    display: none;
+  }
 }
 
 .promotions {
@@ -163,13 +246,28 @@ body {
 }
 
 .promotions__item {
-  width: 360px;
+  width: 31%;
   min-height: 260px;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   margin: 0 0 30px;
+}
+
+@media (max-width: 1024px) {
+  .promotions__item {
+    min-height: 168px;
+    margin: 0 0 19px;
+  }
+}
+
+@media (max-width: 767px) {
+  .promotions__item {
+    width: 100%;
+    min-height: 247px;
+    margin: 0 0 32px;
+  }
 }
 
 .promotions__item--women {
@@ -191,6 +289,12 @@ body {
   background-image: url(../img/acs-prom.png);
   background-size: cover;
   width: 100%;
+}
+
+@media (max-width: 1024px) {
+  .promotions__item--accesories {
+    min-height: 116px;
+  }
 }
 
 .promotion__title {
@@ -234,9 +338,21 @@ body {
   justify-content: space-between;
 }
 
+@media (max-width: 767px) {
+  .products__list {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
 .products__item {
   width: 360px;
-  margin: 0 0 30px 0;
+}
+
+@media (max-width: 430px) {
+  .products__item {
+    width: 100%;
+  }
 }
 
 .products__button {
@@ -259,6 +375,12 @@ body {
 
 .product__img {
   display: block;
+}
+
+@media (max-width: 430px) {
+  .product__img {
+    width: 100%;
+  }
 }
 
 .product__description {
@@ -301,6 +423,13 @@ body {
   justify-content: space-between;
 }
 
+@media (max-width: 1024px) {
+  .advantages__list {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
 .advantages__item {
   width: 360px;
   min-height: 341px;
@@ -336,9 +465,22 @@ body {
   align-items: center;
 }
 
+@media (max-width: 1024px) {
+  .footer-container {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
 .subscribe {
   background-image: url(../img/footer-back.png);
   min-height: 448px;
+}
+
+@media (max-width: 1024px) {
+  .subscribe {
+    background-image: url(../img/footer-fon-tab.png);
+  }
 }
 
 .subscribe__quote {
@@ -418,6 +560,13 @@ body {
   min-height: 79px;
 }
 
+@media (max-width: 1024px) {
+  .social-network-container {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
 .social-network__list {
   display: flex;
 }
@@ -456,12 +605,24 @@ body {
   padding-bottom: 96px;
 }
 
+@media (max-width: 767px) {
+  .registration__main {
+    flex-direction: column;
+  }
+}
+
 .registration-title {
   font-size: 24px;
   line-height: 29px;
   font-weight: 400;
   color: #F16D7F;
   text-transform: uppercase;
+}
+
+@media (max-width: 767px) {
+  .registration-title {
+    text-align: center;
+  }
 }
 
 .registration-form__form-legend {
@@ -516,6 +677,12 @@ body {
 
 .registration-perks {
   margin-left: 128px;
+}
+
+@media (max-width: 767px) {
+  .registration-perks {
+    margin: 40px 0;
+  }
 }
 
 .perks__title {

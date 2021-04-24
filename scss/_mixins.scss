@@ -3,3 +3,21 @@
     line-height: $height;
     font-weight: $weight;
 }
+
+@mixin tablet {
+    @media (max-width: $desktop-w) {
+        @content;
+    }
+    
+}
+
+@mixin mobile {
+    @media (max-width: $tablet-w) {
+        @content;
+    }
+}
+@mixin min-mobile {
+    @media (max-width: $mobile-w) {
+         @content;
+        }
+}
