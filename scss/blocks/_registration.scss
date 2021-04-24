@@ -1,42 +1,42 @@
-.registration{
+.registration {
 
-&__header {
-    background-color: $black-color;
-    margin : 0;
-}
-
-&__brand {
-    min-height: 148px;
-    display: flex;
-    margin: 0;
-}
-
-&__advantages {
-    background-color: $black-color;
-    margin:  0;
-    min-height: 341px;
-}
-
-&__main {
-    display: flex;
-    padding-top: 64px;
-    padding-bottom: 96px;
-
-    @include mobile{
-        flex-direction: column;
+    &__header {
+        background-color: $black-color;
+        margin : 0;
     }
 
-}
+    &__brand {
+        min-height: 148px;
+        display: flex;
+        margin: 0;
+    }
 
-&-title {
-    @include font(24px, 29px, 400);
-    color:$dark-pink-color;
-    text-transform: uppercase;
-    @include mobile{
-        text-align: center;
+    &__advantages {
+        background-color: $black-color;
+        margin:  0;
+        min-height: 341px;
+    }
+
+    &__main {
+        display: flex;
+        padding-top: 64px;
+        padding-bottom: 96px;
+
+        @include mobile{
+            flex-direction: column;
+        }
 
     }
 
-}
+    &-title {
+        @include font(24px, 29px, 400);
+        color:$dark-pink-color;
+        text-transform: uppercase;
+        @include mobile{
+            text-align: center;
+
+        }
+
+    }
 
 }

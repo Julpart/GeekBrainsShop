@@ -19,41 +19,41 @@
        
     }
 
-&__quote {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    width: 360px;
-    min-height: 448px;
+    &__quote {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 360px;
+        min-height: 448px;
    
 
-}
+    }
 
-&__quote-text {
-    margin-top: 30px;
-    font-style: italic;
-    @include font (20px,24px,400);
-    text-align: center;
-}
+    &__quote-text {
+        margin-top: 30px;
+        font-style: italic;
+        @include font (20px,24px,400);
+        text-align: center;
+    }
 
-&__form {
-    width: 356px;
-    display: flex;
-    flex-direction: column;
-}
+    &__form {
+        width: 356px;
+        display: flex;
+        flex-direction: column;
+    }
 
-&__sub-title {
-    @include font (24px,38px,700);
-    text-align: center;
-    display:block;
-}
+    &__sub-title {
+        @include font (24px,38px,700);
+        text-align: center;
+        display:block;
+    }
 
-&__title {
-    @include font (18px,30px,400);
-    text-align: center;
+    &__title {
+        @include font (18px,30px,400);
+        text-align: center;
 
-}
+    }
 
 .email-subscribe {
     height: 49px;

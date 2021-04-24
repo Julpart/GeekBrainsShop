@@ -17,14 +17,16 @@
     <header class="header">
         <div class="container header__container">
             <div>
-               <a href="./index.html" class="header__logo"> <img class="header__logo" src="img/logo.svg" alt="logo" width="44" height="38"></a>
+                <a href="./index.html" class="header__logo"> <img class="header__logo" src="img/logo.svg" alt="logo"
+                        width="44" height="38"></a>
                 <img src="img/search.svg" alt="search" width="26" height="28">
             </div>
             <div>
                 <button type="button" class="header__button">
                     <img src="img/burger.svg" alt="burger" width="32" height="23">
                 </button>
-                <a class="header__person" href="./registration.html"><img src="img/person.svg" alt="person" width="29" height="29"></a>
+                <a class="header__person" href="./registration.html"><img src="img/person.svg" alt="person" width="29"
+                        height="29"></a>
                 <a class="header__cart" href="#"><img src="img/cart.svg" alt="cart" width="32" height="29"></a>
             </div>
         </div>
@@ -103,8 +105,12 @@
             <ul class="products__list">
 
                 <li class="products__item product">
-
-                    <img class="product__img" src="./img/man-product.jpg" alt="man product 1">
+                    <div class="product__img-hover">
+                        <img class="product__img" src="./img/man-product.jpg" alt="man product 1">
+                        <div class="product__hover">
+                            <button class="product__button"> <img src="img/cart.svg" alt="cart" width="25" height="23"> Add to Cart</button>
+                        </div>
+                    </div>
                     <div class="product__description">
                         <h3 class="product__title">ellery x m'o capsule</h3>
                         <p class="product__text">Known for her sculptural takes on traditional tailoring, Australian
@@ -117,6 +123,10 @@
                 <li class="products__item product">
 
                     <img class="product__img" src="./img/women-product.jpg" alt="women product 1">
+                    <div class="product__hover">
+                        <button class="product__button"> <img src="img/cart.svg" alt="cart" width="25" height="23"> Add to Cart</button>
+                    </div>
+                </div>
                     <div class="product__description">
                         <h3 class="product__title">ellery x m'o capsule</h3>
                         <p class="product__text">Known for her sculptural takes on traditional tailoring, Australian
@@ -129,6 +139,10 @@
                 <li class="products__item product">
 
                     <img class="product__img" src="./img/man-product-2.png" alt="man product 2">
+                    <div class="product__hover">
+                        <button class="product__button"> <img src="img/cart.svg" alt="cart" width="25" height="23"> Add to Cart</button>
+                    </div>
+                </div>
                     <div class="product__description">
                         <h3 class="product__title">ellery x m'o capsule</h3>
                         <p class="product__text">Known for her sculptural takes on traditional tailoring, Australian
@@ -141,6 +155,10 @@
                 <li class="products__item product">
 
                     <img class="product__img" src="./img/man-product-3.png" alt="man product 3">
+                    <div class="product__hover">
+                        <button class="product__button"> <img src="img/cart.svg" alt="cart" width="25" height="23"> Add to Cart</button>
+                    </div>
+                </div>
                     <div class="product__description">
                         <h3 class="product__title">ellery x m'o capsule</h3>
                         <p class="product__text">Known for her sculptural takes on traditional tailoring, Australian
@@ -153,6 +171,10 @@
                 <li class="products__item product">
 
                     <img class="product__img" src="./img/women-product-2.png" alt="women product 2">
+                    <div class="product__hover">
+                        <button class="product__button"> <img src="img/cart.svg" alt="cart" width="25" height="23"> Add to Cart</button>
+                    </div>
+                </div>
                     <div class="product__description">
                         <h3 class="product__title">ellery x m'o capsule</h3>
                         <p class="product__text">Known for her sculptural takes on traditional tailoring, Australian
@@ -165,6 +187,10 @@
                 <li class="products__item product">
 
                     <img class="product__img" src="./img/women-product-3.png" alt="women product 3">
+                    <div class="product__hover">
+                        <button class="product__button"> <img src="img/cart.svg" alt="cart" width="25" height="23"> Add to Cart</button>
+                    </div>
+                </div>
                     <div class="product__description">
                         <h3 class="product__title">ellery x m'o capsule</h3>
                         <p class="product__text">Known for her sculptural takes on traditional tailoring, Australian
@@ -217,16 +243,17 @@
             <div class="container footer-container">
                 <div class="subscribe__quote">
                     <img src="./img/Avatar.png" alt="Avatar" width="96" height="96">
-                    <p class="subscribe__quote-text">“Vestibulum quis porttitor dui! Quisque viverra nunc mi, a pulvinar purus
+                    <p class="subscribe__quote-text">“Vestibulum quis porttitor dui! Quisque viverra nunc mi, a pulvinar
+                        purus
                         condimentum“</p>
                 </div>
                 <div class="subscribe__form">
                     <h2 class="subscribe__title"><span class="subscribe__sub-title"> subscribe</span> for our newletter
                         and promotion</h2>
-                        <form class="subscribe__form-footer" action="" method="GET">
-                            <input class="email-subscribe" type="email" required placeholder="Enter Your Email">
-                            <button type="submit" class="button-subs"><span class="button-text">Subscribe</span></button>
-                        </form>
+                    <form class="subscribe__form-footer" action="" method="GET">
+                        <input class="email-subscribe" type="email" required placeholder="Enter Your Email">
+                        <button type="submit" class="button-subs"><span class="button-text">Subscribe</span></button>
+                    </form>
                 </div>
             </div>
         </div>

@@ -347,6 +347,7 @@ body {
 
 .products__item {
   width: 360px;
+  position: relative;
 }
 
 @media (max-width: 430px) {
@@ -383,6 +384,22 @@ body {
   }
 }
 
+.product__hover {
+  transform: translate(-50%, -50%);
+  background: #3a3838;
+  width: 360px;
+  height: 73%;
+  position: absolute;
+  top: 36%;
+  left: 50%;
+  opacity: 0;
+  cursor: pointer;
+}
+
+.product__hover:hover, .product__hover:focus {
+  opacity: 0.87;
+}
+
 .product__description {
   background: var(--gray-color);
   padding: 25px 29px 20px 17px;
@@ -410,6 +427,19 @@ body {
   line-height: 19px;
   font-weight: 400;
   color: #F16D7F;
+}
+
+.product__button {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  height: 44px;
+  width: 139px;
+  border-radius: 0px;
+  border: 1px solid white;
+  background-color: rgba(255, 255, 255, 0);
+  color: white;
 }
 
 .advantages {

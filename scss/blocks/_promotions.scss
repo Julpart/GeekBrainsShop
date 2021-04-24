@@ -56,15 +56,16 @@
 }
 
 
-
-.promotion__title {
+.promotion{
+&__title {
     text-transform: uppercase;
     @include font(16px,19px,400);
     color: #FBFBFB;
 }
 
-.promotion__text {
+&__text {
     text-transform: uppercase;
     @include font(24px,29px,700);   
     color: $dark-pink-color;
+}
 }
