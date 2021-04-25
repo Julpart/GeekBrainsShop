@@ -558,6 +558,10 @@ body {
   flex-direction: column;
 }
 
+.subscribe__form-footer {
+  position: relative;
+}
+
 .subscribe__sub-title {
   font-size: 24px;
   line-height: 38px;
@@ -579,18 +583,17 @@ body {
   left: 917px;
   top: 243px;
   border: none;
-  border-radius: 30px;
+  border-radius: 20px 0 0 20px;
   background: #E1E1E1;
 }
 
 .subscribe .button-subs {
   height: 49px;
   width: 100px;
-  left: 1173px;
-  top: 243px;
   border: none;
-  border-radius: 30px;
+  border-radius: 0 20px 20px 0;
   background: #F16D7F;
+  position: absolute;
 }
 
 .subscribe .button-text {
@@ -624,6 +627,14 @@ body {
 
 .social-network__item {
   margin-left: 7px;
+}
+
+.social-network__picture:hover {
+  transform: scale(1.1, 1.1);
+}
+
+.social-network__picture-1:hover {
+  fill: #F16D7F;
 }
 
 .copyright {

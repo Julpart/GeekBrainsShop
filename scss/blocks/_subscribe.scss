@@ -43,6 +43,10 @@
         flex-direction: column;
     }
 
+    &__form-footer{
+        position: relative;
+    }
+
     &__sub-title {
         @include font (24px,38px,700);
         text-align: center;
@@ -61,18 +65,18 @@
     left: 917px;
     top: 243px;
     border: none;
-    border-radius: 30px;
+    border-radius: 20px 0 0 20px;
     background: #E1E1E1;  
 }
 
 .button-subs {
     height: 49px;
     width: 100px;
-    left: 1173px;
-    top: 243px;
     border: none;
-    border-radius: 30px;
+    border-radius: 0 20px 20px 0;
     background: #F16D7F;
+    position: absolute;
+
 }
 
 .button-text {
